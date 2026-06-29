@@ -1,0 +1,20 @@
+# Regenerable / bulky run outputs — not product data
+synthetic_data/
+artifacts/
+wandb/
+ml_state.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Xcode / XcodeGen — project.yml is the source of truth; regenerate with `xcodegen generate`
+*.xcodeproj/
+Generated/
+xcuserdata/
+*.xcuserstate
+DerivedData/
+
+# Core ML model — hosted on Hugging Face, not committed (download into app/ before build)
+app/VisionCardioHR.mlpackage/
+app/VisionCardioHR.mlpackage.synthetic.bak/
